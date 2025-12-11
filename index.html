@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Processos EdTech - 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header-bg {
+            background: linear-gradient(90deg, #003366 0%, #0056b3 100%); /* Azul corporativo */
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .nav-tabs .nav-link {
+            color: #495057;
+            font-weight: 500;
+        }
+        .nav-tabs .nav-link.active {
+            color: #0056b3;
+            border-top: 3px solid #0056b3;
+            font-weight: bold;
+        }
+        .tab-content {
+            background: white;
+            padding: 2rem;
+            border: 1px solid #dee2e6;
+            border-top: none;
+            border-radius: 0 0 0.25rem 0.25rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h3 {
+            color: #0056b3;
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #333;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .citation-box {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-left: 4px solid #0056b3;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .table-custom {
+            font-size: 0.9rem;
+        }
+        .table-custom thead {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-bg text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Manual de Processos EdTech</h1>
+            <p class="lead">Central de Procedimentos Operacionais e Planejamento - 2025</p>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        
+        <ul class="nav nav-tabs" id="manualTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="levantamento-tab" data-bs-toggle="tab" data-bs-target="#levantamento" type="button" role="tab"><i class="fas fa-search me-2"></i>Levantamento</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ticket-tab" data-bs-toggle="tab" data-bs-target="#ticket" type="button" role="tab"><i class="fas fa-ticket-alt me-2"></i>Tickets & Planejamento</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="validacao-tab" data-bs-toggle="tab" data-bs-target="#validacao" type="button" role="tab"><i class="fas fa-check-double me-2"></i>Validação</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mdd-tab" data-bs-toggle="tab" data-bs-target="#mdd" type="button" role="tab"><i class="fas fa-flask me-2"></i>MDD (Práticas)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="transposicao-tab" data-bs-toggle="tab" data-bs-target="#transposicao" type="button" role="tab"><i class="fas fa-sync-alt me-2"></i>Transposição</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="orcamento-tab" data-bs-toggle="tab" data-bs-target="#orcamento" type="button" role="tab"><i class="fas fa-calculator me-2"></i>Orçamento</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="manualTabsContent">
+            
+            <div class="tab-pane fade show active" id="levantamento" role="tabpanel">
+                <h3>Levantamento de Disciplinas a Produzir</h3>
+                <p>O processo inicia-se a partir da Matriz Vitru, onde é feito um extrato das produções indicadas para os módulos seguintes.</p>
+                
+                <h4>Categorias de Levantamento</h4>
+                <ul>
+                    <li><strong>Novos:</strong> Produções inéditas. Se a disciplina já foi feita, marcar como "Reaproveitamento".</li>
+                    <li><strong>Adaptações:</strong> Ajustes em materiais existentes.</li>
+                    <li><strong>Alterações de Nome:</strong> Mudanças apenas na nomenclatura.</li>
+                    <li><strong>Reexportação:</strong> Materiais vindos da Uniasselvi para Unicesumar.</li>
+                </ul>
+
+                <div class="citation-box">
+                    <strong>Processo de Conferência (Aba Novos):</strong>
+                    <ol>
+                        <li>Filtrar pelo ano de produção (ex: 2026) e módulo (ex: 53).</li>
+                        <li>Verificar no Monday se já existe produção em andamento.</li>
+                        <li>Se existir: Tag "REAPROVEITAMENTO" (Verde).</li>
+                        <li>Se não existir: Tag "Inserida para Produção Nova" (Rosa).</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="ticket" role="tabpanel">
+                <h3>Abertura de Tickets e Quadro de Planejamento</h3>
+                <p>Após o levantamento, inicia-se a abertura de tickets no quadro do Monday e na Sydle.</p>
+
+                <h4>Grupos no Monday</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">Produções Novas</li>
+                            <li class="list-group-item">Adaptações</li>
+                            <li class="list-group-item">Alterações de Nomes</li>
+                            <li class="list-group-item">Reexportações</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">Aulas Conceituais</li>
+                            <li class="list-group-item">Vínculo Gioconda</li>
+                            <li class="list-group-item">Tratativas & Cancelado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>Fluxo Sydle (Coordenador)</h4>
+                <p>Caminho: <em>Portal de Solicitações > Serviços > Gestão de Pessoas > Contratação e Movimentação > Contratação e pagamento de Professor-Autor (conteudista) – EdTech.</em></p>
+                
+                <div class="alert alert-info">
+                    <strong>Importante:</strong> Os coordenadores têm <strong>20 dias úteis</strong> para retornar os tickets do plano da disciplina preenchido. O plano deve conter no mínimo 15 páginas.
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="validacao" role="tabpanel">
+                <h3>Validação da Planilha de Produção</h3>
+                <p>Conferência cruzada entre a Matriz Vitru e a Planilha de Produção antes do envio aos coordenadores.</p>
+
+                <h4>Pontos de Atenção</h4>
+                <ul>
+                    <li><strong>Cursos sem Livro Físico:</strong> Verificar na coluna "formato diagramação" (deve constar: online, pdf, webflow, ou não possui material).</li>
+                    <li><strong>Cursos Novos:</strong> Conferir se a quantidade de cursos na metodologia online está correta (aprox. 104 cursos).</li>
+                    <li><strong>Anos do Curso:</strong> Verificar se o 3º e 4º ano estão previstos corretamente na planilha de produção.</li>
+                    <li><strong>Híbrido:</strong> Todas as disciplinas híbridas devem ter formato de diagramação <strong>COLOR</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="tab-pane fade" id="mdd" role="tabpanel">
+                <h3>Materiais Didáticos de Disciplina (MDD's)</h3>
+                <p>Materiais de apoio para práticas presenciais ou híbridas, compostos por roteiro técnico e vídeo demonstrativo.</p>
+
+                <h4>Estrutura do MDD</h4>
+                <ul>
+                    <li><strong>Roteiro Escrito:</strong> Aprox. 20 páginas (Apresentação, Insumos, POP, Atividades, Referências).</li>
+                    <li><strong>Vídeo:</strong> 20 a 40 minutos (demonstrativo).</li>
+                </ul>
+
+                <table class="table table-bordered table-custom mt-3">
+                    <thead>
+                        <tr>
+                            <th>Aspecto</th>
+                            <th>Unicesumar</th>
+                            <th>Uniasselvi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Contratação</td>
+                            <td>Mesmo professor faz roteiro e vídeo</td>
+                            <td>Roteiro e vídeo feitos por pessoas diferentes</td>
+                        </tr>
+                        <tr>
+                            <td>Plataforma</td>
+                            <td>G Site (Vimeo)</td>
+                            <td>Realize (Trilhas)</td>
+                        </tr>
+                        <tr>
+                            <td>Pagamento</td>
+                            <td>R$ 500,00 (pacote completo)</td>
+                            <td>Dividido por atividade</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="transposicao" role="tabpanel">
+                <h3>Projeto Transposição</h3>
+                <p>Conversão de livros físicos para versão digital (HTML/White Label) para alunos ingressantes a partir da matriz 2023.</p>
+
+                <h4>Estrutura</h4>
+                <ul>
+                    <li><strong>Formato Digital:</strong> Organizado em 9 Temas (White Label).</li>
+                    <li><strong>Formato Físico (PDF):</strong> Pode permanecer no modelo antigo (ex: 5 unidades).</li>
+                </ul>
+
+                <div class="citation-box">
+                    <strong>Atenção na Validação de Materiais Antigos:</strong>
+                    Verificar qualidade das imagens, links quebrados (especialmente vídeos/podcasts "eu indico") e estrutura do index.
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="orcamento" role="tabpanel">
+                <h3>Demandas de Orçamento e Administrativo</h3>
+                <p>Gestão de compras, viagens, sistemas e extratos orçamentários.</p>
+
+                <h4>Sistemas Utilizados</h4>
+                <div class="row text-center mt-3">
+                    <div class="col-md-3">
+                        <div class="card p-2 bg-light">
+                            <strong>PROTHEUS</strong><br>Gestão Financeira
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2 bg-light">
+                            <strong>OUTBUYCENTER</strong><br>Compras
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2 bg-light">
+                            <strong>VOLL</strong><br>Viagens
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2 bg-light">
+                            <strong>SYDLE</strong><br>Tickets
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mt-4">Tipos de Compra</h4>
+                <ul>
+                    <li><strong>Registro:</strong> Valores até R$ 5.000,00 (Área pode escolher fornecedor).</li>
+                    <li><strong>Compra:</strong> Acima de R$ 5.000,00 (Passa por cotação do setor de Compras).</li>
+                    <li><strong>Contrato:</strong> Altos valores ou parcelamentos.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-muted border-top">
+        <p>Desenvolvido para a equipe de Planejamento EdTech &copy; 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
